@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:background="?selectableItemBackground"
+    android:focusable="true"
+    android:orientation="horizontal"
+    android:padding="20dp"
+    android:paddingStart="24dp"
+    android:paddingEnd="24dp">
+
+    <ImageButton
+        android:id="@+id/play_pause_record"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/ic_circle"
+        android:contentDescription="@string/play_audio"
+        android:focusable="true"
+        android:src="@drawable/ic_baseline_play"
+        android:layout_gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvFileName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/file_name"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvMetaData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/meta_data"
+            android:textSize="16sp"
+            android:textStyle="normal" />
+    </LinearLayout>
+
+</LinearLayout>
